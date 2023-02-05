@@ -17,10 +17,56 @@
         body{
             font-family: 'Poppins', sans-serif;
             background: transparent linear-gradient(175deg, #11502C 0%,  #11502C 75%, #FFB105 100%) 0% 0% no-repeat padding-box;
-        } 
+        }  
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #203F20;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
     </style>
 </head>
     <body class=" w-screen overflow-x-hidden " >   
+
+        <div id="mySidenav" class="sidenav font-semibold">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <a href="#nav" class=" " >Home</a>
+            <a href="#token" class=" " >Tokenomics</a>
+            <a href="#roadmap" class=" " >Roadmap</a>
+            <a href="https://poocoin.app/tokens/0x59a1d6f2e3843b6d0cc618489a2836ff9ac716ae" target="_blank" class=" " >View Charts</a>
+            <a href="https://ares-nation.gitbook.io/denji-inu-whitepaper-v1.0/" target="_blank" class=" " >White Paper</a>
+            <a href="https://bscscan.com/token/0x59a1d6f2e3843b6d0cc618489a2836ff9ac716ae" target="_blank" class=" " >Contracts</a>
+            <a href="https://twitter.com/denji_inu1" target="_blank" class=" " >Twitter</a>
+            <a href="https://t.me/Denjiinucommunity1" target="_blank" class=" " >telegram</a>
+        </div>
         <nav id="nav" class=" w-full items-center text-white justify-between px-4 lg:px-[140px] flex flex-row py-5 text-[#000]" >
             <div class=" flex text-white text-xl " >
                 <img class=" w-[50px] h-[50px] " alt="logo" src="img/logo.PNG" /> 
@@ -28,7 +74,10 @@
                     <p class=" font-semibold " >DENJI <span class=" text-[#FFB105] " >INU</span></p>
                     <p class=" font-semibold " >デンジ</p>
                 </div>
-            </div>
+            </div> 
+            <button onclick="openNav()" class=" lg:hidden  " > 
+                <i class="fa fa-bars text-white text-3xl "></i>
+            </button>
             <div class=" hidden lg:flex items-center text-white gap-4 " >
                 <a href="#nav" class=" " >Home</a>
                 <a href="#token" class=" " >Tokenomics</a>
@@ -156,4 +205,14 @@
             <p class=" font-medium text-center  " >DenjiInu.io © 2023. All rights reserved</p>
         </footer>
     </body>
+
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "70vw";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </html>
