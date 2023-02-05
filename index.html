@@ -12,15 +12,15 @@
     <style>
         body{
             font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-            background: transparent linear-gradient(175deg, #11502C 0%, #FFB105 100%) 0% 0% no-repeat padding-box;
+            scroll-behavior: smooth; 
+            background: transparent linear-gradient(175deg, #11502C 0%,  #11502C 75%, #FFB105 100%) 0% 0% no-repeat padding-box;
         }
         /* .inter-font {
             font-family: 'Inter', sans-serif;
         } */
     </style>
 </head>
-    <body class=" w-screen overflow-x-hidden " > 
+    <body class=" w-screen overflow-x-hidden " >   
         <nav id="nav" class=" w-full items-center text-white justify-between px-4 lg:px-[140px] flex flex-row py-5 text-[#000]" >
             <div class=" w-[50px] h-[50px] bg-green-300 " >
 
@@ -42,25 +42,29 @@
                 </div>
             </div>
         </nav>
-        <section class=" w-full flex lg:flex-row flex-col items-center py-5 px-4 lg:px-[140px] " >
+        <section class=" w-full flex relative lg:flex-row flex-col items-center px-4 lg:pl-[140px] " >
             <div class=" w-full lg:pr-4 text-white " >
-                <p class=" text-2xl text-center lg:text-5xl font-bold  " >DENJI INU - <span class=" text-[#FFB105] " >デンジ</span></p>
+                <p class=" text-2xl lg:text-start text-center lg:text-5xl font-bold  " >DENJI INU - <span class=" text-[#FFB105] " >デンジ</span></p>
                 <p class=" my-5 lg:text-left text-center" >Denji Inu - デンジ is a Meme BSC based Token driven by the community. It is designed to give maximum reward to the community members through the Holder's Reward which is 2% of every transaction.</p>
                 <div class=" w-full flex lg:flex-row flex-col items-center mt-6 " >
                     <button class=" w-full lg:w-[120px] h-[43px] font-semibold rounded-[12px] lg:mr-2 bg-[#ffb23e] text-[#19502c] " >Sign In</button>
                     <button class=" w-full lg:w-[120px] h-[43px] font-semibold rounded-[12px] lg:mt-0 mt-4 lg:ml-2 border border-[#ffb23e] text-[#fff] " >Sign Up</button>
                 </div>
             </div>
-            <div class=" w-full lg:mt-0 mt-8 lg:pl-14 " >
-                <div class=" h-[400px] w-full bg-blue-400 " ></div>
-            </div>
+            <div class=" w-full lg:mt-0 mt-8 lg:pl-14 mr-40 " >
+                <div class=" h-[550px] w-full flex items-center " >
+                    <img src="img/phoneone.svg" class=" h-[650px] -mr-32 " alt="" />
+                    <img src="img/phonetwo.svg" class=" h-[700px] " alt="" /> 
+                </div>
+            </div> 
+            <img src="img/image.png" class=" h-[650px] absolute right-[30vw] opacity-[0.3] -bottom-[300px] -z-10 " alt="" />
         </section> 
-        <section class=" w-screen grid grid-cols-1 lg:grid-cols-5 gap-2 " >
-            <div class=" w-full h-[80px] bg-red-300 " ></div>
-            <div class=" w-full h-[80px] bg-red-300 " ></div>
-            <div class=" w-full h-[80px] bg-red-300 " ></div>
-            <div class=" w-full h-[80px] bg-red-300 " ></div>
-            <div class=" w-full h-[80px] bg-red-300 " ></div>
+        <section class=" w-full  grid grid-cols-5 py-6 items-center bg-white gap-4 px-4 " >
+            <img class=" w-full " src="img/pancakelogo.svg" alt="logo" />
+            <img class=" w-full " src="img/dextoolslogo.svg" alt="My Happy SVG" />  
+            <img class=" w-full " src="img/poocoinlogo.svg" alt="My Happy SVG" />  
+            <img class=" w-full " src="img/nomicslogo.svg" alt="My Happy SVG" />  
+            <img class=" w-full " src="img/coinscopelogo.svg" alt="My Happy SVG" />  
         </section>
         <section class=" w-full flex lg:flex-row flex-col text-white py-12 px-4 lg:px-[140px] " >
             <div class=" w-full flex flex-col items-center lg:pr-6 " >
@@ -68,7 +72,8 @@
                 <p class=" font-semibold text-center mt-2 " >Read available documents to better understand the Denji Inu ecosystem</p>
                 <button class=" w-full h-[55px] font-semibold rounded-[15px] my-5 border border-[#ffb23e] text-[#fff] " >Audit</button>
                 <button class=" w-full h-[55px] font-semibold rounded-[15px] bg-[#ffb23e] text-[#fff] " >Buy $DENJI</button>
-                <div class=" w-full h-[450px] bg-red-500 mt-8 " >
+                <div class=" w-full h-[450px] mt-8 " >
+                    <img class=" w-full " src="img/denji.svg" alt="My Happy SVG" /> 
                 </div>    
             </div>
             <div class=" w-full flex flex-col items-center lg:pt-0 pt-6 lg:pl-6 " >
@@ -118,7 +123,7 @@
                 <span class=" mt-2 "> The Token is inspired by Denji who is the main protagonist of the Chainsaw Man manga and anime series. As a young boy, he inherits his father's debts from the Yakuza. After meeting Pochita, he becomes a Devil Hunter for the Yakuza in an attempt to clear his debt and ultimately works for the public safety at last.</span>
             </p>
         </section>
-        <section class=" w-full flex lg:flex-row flex-col text-white py-12 px-4 lg:px-[140px] " >
+        <section class=" w-full relative flex lg:flex-row flex-col text-white py-12 px-4 lg:px-[140px] " >
             <div class=" w-full lg:pr-6 " >
                 <p class=" text-2xl text-center lg:text-5xl font-extrabold text-center ">Tokenomics</p>
                 <p class=" font-semibold text-center flex flex-col mt-6 " >Denji Inu tokenomics is a well structured system engineered to yield passive income for the community members through 2% of every transaction that is distributed to all token to holders.</p>
@@ -135,7 +140,8 @@
             </div>
             <div class=" w-full lg:pt-0 pt-6 lg:pl-6 " >
 
-            </div>
+            </div> 
+            <img src="img/imagetwo.png"  class=" h-[400px] absolute -z-10 opacity-[0.3] right-[40vw] bottom-0 " alt="" /> 
         </section>
         <section class=" w-full text-white py-12 px-4 lg:px-[140px] " >
             <p class=" text-2xl text-center lg:text-5xl font-bold  " >Roadmap - <span class=" text-[#FFB105] " >ドマップ</span></p>
