@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&family=Poppins&display=swap" rel="stylesheet">
@@ -57,8 +58,7 @@
         /* border-[#3c5721] */
     </style>
 </head>
-    <body class=" w-screen overflow-x-hidden " >   
-
+    <body class=" w-screen overflow-x-hidden " > 
         <div id="mySidenav" class="sidenav font-semibold">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
             <a href="#nav" class=" " >Home</a>
@@ -140,8 +140,13 @@
             </div>
             <div class=" w-full flex flex-col items-center lg:pt-0 pt-6 lg:pl-6 " >
                 <p class=" text-2xl text-center lg:text-5xl font-extrabold ">Trade Denji</p>
-                <p class=" font-semibold text-center mt-2 " >Trade $DENJI using VoltiChange Swap. Community members who use VoltiChange to trade $DENJI, will be helping deflate the total supply of $DENJI. With every transaction with the $DENJI ON VoltiCchange, $DENJI is Automatically burnt.</p>
-                <div style="box-shadow: 0px 3px 6px #00000029; border-radius: 23px;" class=" w-full mt-4 p-8 bg-[#203F20] " >
+                <p class=" font-semibold text-center mt-2 mb-4 " >Trade $DENJI using VoltiChange Swap. Community members who use VoltiChange to trade $DENJI, will be helping deflate the total supply of $DENJI. With every transaction with the $DENJI ON VoltiCchange, $DENJI is Automatically burnt.</p>
+                  
+        <iframe 
+        src="https://voltichange.net/api/widget/?chain=56&darktheme=true&tokenin=Native&tokenout=0x59a1d6f2e3843b6d0cc618489a2836ff9ac716ae&slippage=10" 
+        frameborder="0" 
+        class="voltichange-widget"></iframe>
+                <!-- <div style="box-shadow: 0px 3px 6px #00000029; border-radius: 23px;" class=" w-full mt-4 p-8 bg-[#203F20] " >
                     <div class=" w-full flex items-center " >
                     <select class=" w-full text-xl text-center font-bold text-[#20253F] h-[50px] bg-white rounded-[12px] " >
                             <option>ETHEREUM</option>
@@ -174,7 +179,7 @@
                         </div>
                     </div> 
                     <button class=" w-full h-[55px] mt-6 font-semibold rounded-[15px] bg-[#ffb23e] text-[#fff] " >Connect Wallet</button> 
-                </div>
+                </div> -->
             </div>
         </section>
         <section class=" w-full text-white py-12 px-4 lg:px-[140px] ">
